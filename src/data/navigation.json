@@ -1,0 +1,16 @@
+{
+  "primary": [
+    { "label": "मुख्यपृष्ठ", "path": "/", "icon": "Home" },
+    { "label": "गावाबद्दल", "path": "/about", "icon": "Info" },
+    { "label": "कार्यक्रम", "path": "/events", "icon": "Calendar" },
+    { "label": "फोटो गॅलरी", "path": "/gallery", "icon": "Image" },
+    { "label": "फॉर्म्स", "path": "/forms", "icon": "FileText" },
+    { "label": "संपर्क", "path": "/contact", "icon": "Phone" }
+  ],
+  "quick": [
+    { "label": "जन्म दाखला", "path": "/forms#birth" },
+    { "label": "मृत्यू दाखला", "path": "/forms#death" },
+    { "label": "उत्पन्न दाखला", "path": "/forms#income" },
+    { "label": "आपत्कालीन नंबर", "path": "/contact#emergency" }
+  ]
+}

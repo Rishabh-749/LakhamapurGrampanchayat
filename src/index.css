@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Village Website Design System - खडकसुखणे गाव */
+
+@layer base {
+  :root {
+    /* Core village theme colors */
+    --background: 45 20% 97%;
+    --foreground: 180 10% 20%;
+
+    /* Village theme colors */
+    --card: 0 0% 100%;
+    --card-foreground: 180 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 10% 20%;
+
+    /* Primary: Forest Green for village nature theme */
+    --primary: 88 65% 15%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 88 45% 35%;
+
+    /* Secondary: Earth Brown for traditional feel */
+    --secondary: 25 60% 45%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Muted: Warm beige tones */
+    --muted: 45 25% 92%;
+    --muted-foreground: 180 8% 45%;
+
+    /* Accent: Golden highlights */
+    --accent: 45 100% 50%;
+    --accent-foreground: 180 10% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 45 15% 88%;
+    --input: 45 15% 90%;
+    --ring: 88 65% 15%;
+
+    --radius: 0.75rem;
+
+    /* Village-specific design tokens */
+    --village-hero-bg: linear-gradient(135deg, hsl(88 65% 15% / 0.4), hsl(25 60% 45% / 0.4));
+    --village-card-shadow: 0 4px 20px hsl(88 65% 15% / 0.1);
+    --village-gold-glow: 0 0 30px hsl(45 100% 50% / 0.3);
+    --village-pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F5DEB3' fill-opacity='0.1'%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3C/g%3E%3C/svg%3E");
+    
+    /* Typography */
+    --font-heading: 'Noto Sans Devanagari', 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* Village-specific component styles */
+@layer components {
+  .village-hero {
+    background: var(--village-hero-bg);
+    position: relative;
+  }
+
+  .village-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--village-pattern);
+    opacity: 0.1;
+  }
+
+  .village-card {
+    box-shadow: var(--village-card-shadow);
+    transition: all 0.3s ease;
+    border: 1px solid hsl(var(--border));
+  }
+
+  .village-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px hsl(88 65% 15% / 0.15);
+  }
+
+  .village-accent-glow {
+    box-shadow: var(--village-gold-glow);
+  }
+
+  .marathi-text {
+    @apply font-heading font-medium;
+  }
+
+  .village-gradient-text {
+    background: linear-gradient(135deg, hsl(88 65% 15%), hsl(25 60% 45%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
