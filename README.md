@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# 🌾 Lakhamapur Grampanchayat Portal
 
-## Project info
+<div align="center">
 
-**URL**: https://lovable.dev/projects/d9ee1764-2fba-4956-8f09-c49dd2ecc324
+### Modern Digital Village Management Platform
 
-## How can I edit this code?
+<p align="center">
+  <img src="https://img.shields.io/badge/React-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/UI-TailwindCSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+</p>
 
-There are several ways of editing your application.
+A production-ready and responsive Grampanchayat web portal developed for the Lakhamapur village administration to digitally manage public information, citizen services, announcements, and community updates through a modern frontend architecture.
 
-**Use Lovable**
+</div>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d9ee1764-2fba-4956-8f09-c49dd2ecc324) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+# ✨ Features
 
-**Use your preferred IDE**
+* Responsive Modern UI
+* Modular React Architecture
+* Public Information Sections
+* Events & Services Management
+* JSON-Driven Content Structure
+* Reusable Components
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# ⚡ Tech Stack
 
-Follow these steps:
+| Frontend           | Styling      | Tools |
+| ------------------ | ------------ | ----- |
+| React + TypeScript | Tailwind CSS | Vite  |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 📂 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+LakhamapurGrampanchayat/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── data/
+│   ├── hooks/
+│   └── assets/
+└── README.md
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+# 🚀 Setup
+
+```bash
+git clone https://github.com/Rishabh-749/LakhamapurGrampanchayat.git
+cd LakhamapurGrampanchayat
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 🌍 Real-World Impact
 
-**Use GitHub Codespaces**
+This platform was developed for the Lakhamapur Grampanchayat and is intended to support real village-level digital communication and public information accessibility.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+# 📈 Engineering Focus
 
-This project is built with:
+This project demonstrates:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* Scalable frontend structure
+* Component-based architecture
+* TypeScript integration
+* Responsive UI development
+* Modern React workflow
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/d9ee1764-2fba-4956-8f09-c49dd2ecc324) and click on Share -> Publish.
+# 👨‍💻 Author
 
-## Can I connect a custom domain to my Lovable project?
+## Rishabh Jagtap
 
-Yes, you can!
+Full Stack Developer focused on scalable and modern web applications.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🌐 GitHub: [https://github.com/Rishabh-749](https://github.com/Rishabh-749)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+<div align="center">
+
+### ⭐ Star the repository if you found it valuable
+
+</div>
